@@ -1,5 +1,5 @@
 function getData() {
-  fetch('http://myjson.com/1ex2zx')
+  fetch('./courses.json')
   .then(response => console.log(response.json()))
   .then(json => console.log(json))
 }
