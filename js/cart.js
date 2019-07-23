@@ -56,7 +56,8 @@ class CourseHandler {
       course.remove();
       courseId = course.querySelector("a").getAttribute("data-id");
       this.removeCourseFromLocalStorage(courseId);
-    } else if (this.event.target.getAttribute(id) === "clear-cart") {
+    } else if (this.event.target.getAttribute("id") === "clear-cart") {
+      console.log(this.event.target.getAttribute("id"));
       while (cartBody.firstChild) {
         cartBody.firstChild.remove(cartBody.firstChild);
       }
